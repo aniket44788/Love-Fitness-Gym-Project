@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import GymHomePage from './Components/GymHomePage';
-import WorkoutPage from './Components/WorkOutpage';
 import Navbar from './Components/Navbar';
 import TrainersPage from './Components/TrainersPage';
+import WorkoutPage from './Components/WorkOutpage';
 
 function App() {
   return (
