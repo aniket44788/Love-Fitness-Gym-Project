@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import GymHomePage from './Components/GymHomePage';
 import Navbar from './Components/Navbar';
 import TrainersPage from './Components/TrainersPage';
-import WorkoutPage from './Components/WorkOutpage';
+import WorkoutPage from './Components/WorkoutPage';
 
 function App() {
   return (
