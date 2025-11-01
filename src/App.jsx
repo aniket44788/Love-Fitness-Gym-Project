@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import TrainersPage from './Components/TrainersPage';
 import WorkoutPage from './Components/WorkoutPage';
 
+
 function App() {
   return (
     <>

@@ -16,7 +16,7 @@ const GymHomePage = () => {
 
 
 
-        
+
       {/* Pricing Section */}
       <section id="pricing" className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,7 +129,7 @@ const GymHomePage = () => {
       </section>
 
 
-      
+
 
       {/* Programs Section */}
       <section id="programs" className="py-20 bg-gray-50">
