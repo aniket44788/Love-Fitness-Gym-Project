@@ -22,10 +22,10 @@ const Navbar = () => {
                         <Link to="/" className="hover:text-red-600 transition">Home</Link>
                         <Link to="/workout" className="hover:text-red-600 transition">Workout</Link>
                         <Link to="/trainer" >
-                            <a className="hover:text-red-600 transition">Trainers</a>
+                            <a className="hover:text-red-600 transition">Personal Traning </a>
                         </Link>
-                        <a href="#pricing" className="hover:text-red-600 transition">Pricing</a>
-                        <a href="#contact" className="hover:text-red-600 transition">Contact</a>
+                        {/* <Link to="/price" className="hover:text-red-600 transition">Pricing </Link> */}
+                        {/* <a href="#contact" className="hover:text-red-600 transition">Contact</a> */}
                         <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full font-semibold transition">
                             Join Now
                         </button>
@@ -46,11 +46,12 @@ const Navbar = () => {
                         <div className="flex flex-col space-y-4">
                             <Link to="/" className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Home</Link>
                             <Link to="/workout" className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Workout</Link>
+                            {/* <Link to="/price" className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Pricing </Link> */}
+
                             <Link to="/trainer">
-                                <a className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Trainers</a>
+                                <a className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Personal Traning </a>
                             </Link>
-                            <a href="#pricing" className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-                            <a href="#contact" className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Contact</a>
+                            {/* <a href="#contact" className="hover:text-red-600 transition" onClick={() => setMobileMenuOpen(false)}>Contact</a> */}
                             <button className="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full font-semibold transition w-full">
                                 Join Now
                             </button>

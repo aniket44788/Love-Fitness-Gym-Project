@@ -4,6 +4,7 @@ import GymHomePage from './Components/GymHomePage';
 import Navbar from './Components/Navbar';
 import TrainersPage from './Components/TrainersPage';
 import WorkoutPage from './Components/WorkoutPage';
+import Price from './Components/Price';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<GymHomePage />} />
         <Route path='/workout' element={<WorkoutPage />} />
         <Route path='/trainer' element={<TrainersPage />} />
+        <Route path='/price' element={<Price />} />
       </Routes>
     </>
   );

@@ -12,9 +12,64 @@ const GymHomePage = () => {
       <section id="home" className="relative min-h-screen flex items-center pt-20"> {/* Background Image Overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/80 to-transparent z-0">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48')] bg-cover bg-center opacity-50"></div>
-        </div> <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"> <div className="grid md:grid-cols-2 gap-12 items-center"> <div> <div className="inline-block bg-red-600/20 border border-red-600 px-4 py-2 rounded-full mb-6"> <span className="text-red-500 text-sm font-semibold">🔥 LIMITED TIME OFFER</span> </div> <h1 className="text-white md:text-7xl font-bold leading-tight mb-6"> TRANSFORM <br /> YOUR <br /> <span className="text-red-600">BODY</span> </h1> <p className="text-white text-lg mb-8 max-w-xl"> Join the love <strong> fitness community </strong> and unlock your full potential. Expert trainers, state-of-the-art equipment, and personalized programs designed for results. </p> <div className="flex flex-col sm:flex-row gap-4"> <button className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-semibold text-lg transition flex items-center justify-center"> Start Free Trial <ChevronRight className="ml-2 w-5 h-5" /> </button> <button className="border-2 border-white hover:bg-white hover:text-black px-8 py-4 rounded-full font-semibold text-lg transition flex items-center justify-center"> <Play className="mr-2 w-5 text-white h-5" /> <h3>Watch Tour</h3> </button> </div> {/* Stats */} <div className="grid grid-cols-3 gap-8 mt-12"> <div> <h3 className="text-3xl font-bold text-red-600">500+</h3> <p className="text-gray-400 text-sm">Members</p> </div> <div> <h3 className="text-3xl font-bold text-red-600">50+</h3> <p className="text-gray-400 text-sm">Programs</p> </div> <div> <h3 className="text-3xl font-bold text-red-600">40+</h3> <p className="text-gray-400 text-sm">Machines</p> </div> </div> </div> </div> </div> </section>
+        </div> <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20"> <div className="grid md:grid-cols-2 gap-12 items-center"> <div> <div className="inline-block bg-white border border-red-600 px-4 py-2 rounded-full mb-6"> <span className="text-red-500 text-sm font-semibold">🔥 LIMITED TIME OFFER</span> </div> <h1 className="text-white md:text-7xl font-bold leading-tight mb-6"> TRANSFORM <br /> YOUR <br /> <span className="text-red-600">BODY</span> </h1> <p className="text-white text-lg mb-8 max-w-xl"> Join the love <strong> fitness community </strong> and unlock your full potential. Expert trainers, state-of-the-art equipment, and personalized programs designed for results. </p> <div className="flex flex-col sm:flex-row gap-4"> <button className="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full font-semibold text-lg transition flex items-center justify-center"> Start Free Trial <ChevronRight className="ml-2 w-5 h-5" /> </button></div> {/* Stats */} <div className="grid grid-cols-3 gap-8 mt-12"> <div> <h3 className="text-3xl font-bold text-red-600">500+</h3> <p className="text-gray-400 text-sm">Members</p> </div> <div> <h3 className="text-3xl font-bold text-red-600">50+</h3> <p className="text-gray-400 text-sm">Programs</p> </div> <div> <h3 className="text-3xl font-bold text-red-600">40+</h3> <p className="text-gray-400 text-sm">Machines</p>
 
+        </div> </div> </div> </div> </div>
+      </section>
 
+      <div className="relative w-full flex justify-center py-10 bg-white-500">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          Love <span className="text-red-600">Fitness Gym </span>
+        </h2>
+      </div>
+
+      <section className="relative w-full flex justify-center py-6 lg:py-12 bg-white">
+        {/* COLLAGE CONTAINER */}
+        <div className="w-[95%] md:w-[90%] max-w-7xl mx-auto">
+
+          {/* Desktop/Tablet: Side-by-side layout | Mobile: Vertical stack */}
+          <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 h-auto lg:h-[80vh] xl:h-[90vh]">
+
+            {/* LEFT IMAGE – Full height on desktop, full width on mobile */}
+            <div
+              className="
+          w-full lg:w-[40%] 
+          h-[50vh] sm:h-[60vh] lg:h-full 
+          rounded-3xl overflow-hidden 
+          shadow-2xl
+          bg-[url('/gym.jpeg')] 
+          bg-cover bg-center bg-no-repeat
+        "
+            />
+
+            {/* RIGHT COLUMN – Stacked on all screens, but side-by-side with left on lg+ */}
+            <div className="w-full lg:w-[55%] flex flex-col gap-6 lg:gap-8">
+
+              {/* TOP RIGHT IMAGE */}
+              <div
+                className="
+            w-full h-[50vh] sm:h-[60vh] lg:h-1/2 
+            rounded-3xl overflow-hidden 
+            shadow-2xl
+            bg-[url('/gym2.jpeg')] 
+            bg-cover bg-center bg-no-repeat
+          "
+              />
+
+              {/* BOTTOM RIGHT IMAGE */}
+              <div
+                className="
+            w-full h-[50vh] sm:h-[60vh] lg:h-1/2 
+            rounded-3xl overflow-hidden 
+            shadow-2xl
+            bg-[url('/gymcounter.jpeg')] 
+            bg-cover bg-center bg-no-repeat
+          "
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Pricing Section */}
@@ -78,6 +133,8 @@ const GymHomePage = () => {
               </div>
             ))}
           </div>
+
+          
         </div>
       </section>
 
@@ -277,10 +334,10 @@ const GymHomePage = () => {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-gray-600 text-sm">
-                <li>123 Fitness Street</li>
-                <li>New York, NY 10001</li>
-                <li>info@lovefitness.com</li>
-                <li>(555) 123-4567</li>
+                <li>Love Fitenss Fitness</li>
+                <li>Vijaynage , Indore </li>
+                {/* <li>info@lovefitness.com</li> */}
+                <li>92017 05771</li>
               </ul>
             </div>
           </div>
